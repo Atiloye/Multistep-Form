@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form | Blue TV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Container -->
+        <div class="form">
+            <div class="form-container">
+                <!-- Sidebar -->
+                <div class="form-sidebar">
+                    <div class="step-active">
+                        <div class="circle">
+                            1
+                        </div>
+                        <div class="step-content">
+                            <span>Step 1</span>
+                            <p><b>Your Info</b></p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="circle">
+                            2
+                        </div>
+                        <div class="step-content">
+                            <span>Step 2</span>
+                            <p><b>Your Plan</b></p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="circle">
+                            3
+                        </div>
+                        <div class="step-content">
+                            <span>Step 3</span>
+                            <p><b>Add-Ons</b></p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="circle">
+                            4
+                        </div>
+                        <div class="step-content">
+                            <span>Step 4</span>
+                            <p><b>Finalization</b></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Sidebar -->
+
+                <!-- Step 1 -->
+                <div class="stp-step-1">
+                    <div class="header">
+                        <h1 class="subtitle">
+                            Personal Info
+                        </h1>
+                        <p class="caption">
+                            Please provide your Name, Email-Address and Phone Number.
+                        </p>
+                    </div>
+                    <form>
+                        <div class="label">
+                            <label for="name">Name</label>
+                            <p class="error">This Field is Required</p>
+                        </div>
+                        <input type="text" id="name" required placeholder="e.g Jeffrey Dahmer">
+                        <div class="label">
+                            <label for="email">Email Address</label>
+                            <p class="error">This Field is Required</p>
+                        </div>
+                        <input type="text" id="email" required placeholder="e.g jeffreydahmer@serial.com">
+                        <div class="label">
+                            <label for="phone">Phone Number</label>
+                            <p class="error">This Field is Required</p>
+                        </div>
+                        <input type="tel" id="phone" required placeholder="e.g +123 456 789">
+                    </form>
+                    <div class="buttons">
+                        <button class="next-step" type="submit">Next Step</button>
+                    </div>
+                </div>
+
+                <!-- Step 2-->
+                <div class="stp-step-2">
+                    <div class="header">
+                        <h1 class="subtitle">
+                            Please, select your plan
+                        </h1>
+                        <p class="caption">
+                            You have options of monthly or annual billing.
+                        </p>
+                    </div>
+                    <form>
+                        <div class="plan-card selected">
+                            <img src="assets/images/single.svg" alt="single icon" srcset="">
+                            <div class="plan-info chosen">
+                                <p><b>Single and Happy</b></p>
+                                <span class="plan-price">₦4000/mo</span>
+                            </div>
+                        </div>
+                        <div class="plan-card">
+                            <img src="assets/images/couple.svg" alt="couples icon" srcset="">
+                            <div class="plan-info">
+                                <p><b>Me and Boo (2 units)</b></p>
+                                <span class="plan-price">₦6500/mo</span>
+                            </div>
+                        </div>
+                        <div class="plan-card">
+                            <img src="assets/images/family.svg" alt="family icon" srcset="">
+                            <div class="plan-info">
+                                <p><b>The Whole Bloodline (5 units)</b></p>
+                                <span class="plan-price">₦15000/mo</span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="switch">
+                        <p class="monthly sw-active">
+                            Monthly
+                        </p>
+                        <label for="" class="switch">
+                            <input type="checkbox" name="" id="">
+                            <span class="slider-round"></span>
+                        </label>
+                        <p class="annually">
+                            Annually
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev-stp" type="button">Previous Step</button>
+                        <button class="next-stp" type="submit">Next Step</button>
+                        
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+
+
+            </div>
+        </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
