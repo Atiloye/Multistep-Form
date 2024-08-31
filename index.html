@@ -63,6 +63,8 @@
                             Please provide your Name, Email-Address and Phone Number.
                         </p>
                     </div>
+
+                    <!-- Form Elements -->
                     <form>
                         <div class="label">
                             <label for="name">Name</label>
@@ -95,6 +97,8 @@
                             You have options of monthly or annual billing.
                         </p>
                     </div>
+
+                    <!-- Sub Plans -->
                     <form>
                         <div class="plan-card selected">
                             <img src="assets/images/single.svg" alt="single icon" srcset="">
@@ -118,6 +122,8 @@
                             </div>
                         </div>
                     </form>
+
+                    <!-- Temporal Billing -->
                     <div class="switch">
                         <p class="monthly sw-active">
                             Monthly
@@ -138,13 +144,102 @@
                 </div>
 
                 <!-- Step 3 -->
+                <div class="stp step-3">
+                    <div class="header">
+                        <h1 class="subtitle">Pick Add-ons</h1>
+                        <p class="caption">Add-Ons you select can enhance your streaming experience with extra benefits.</p>
+                    </div>
 
+                    <!-- 4kUHD -->
+                    <form>
+                        <div class="box" data-id="1">
+                            <input type="checkbox" name="" id="4kuhd">
+                            <div class="decription">
+                                <label for="4kuhd">4k Ultra HD</label>
+                                <small>Access to crisp and smooth 4k Ultra High-Def. streaming quality.</small>
+                            </div>
+                            <p class="price">+₦1000/mo</p>
+                        </div>
+
+                        <!-- Larger -->
+                        <div class="box" data-id="2">
+                            <input type="checkbox" name="" id="larger">
+                            <div class="decription">
+                                <label for="larger">Larger Download Quota</label>
+                                <small>Extra 10GB (total 20gb) download expansion than the regular 10GB. </small>
+                            </div>
+                            <p class="price">+₦1500/mo</p>
+                        </div>
+
+                        <!-- Anime -->
+                        <div class="box" data-id="3">
+                            <input type="checkbox" name="" id="anime">
+                            <div class="decription">
+                                <label for="anime">Anime Index</label>
+                                <small>Access to a dedicated japanese anime streaming server for unlimited anime fun.</small>
+                            </div>
+                            <p class="price">+₦2000/mo</p>
+                        </div>
+                    </form>
+                    <div class="buttons">
+                        <button class="prev-stp" type="button">Previous Step</button>
+                        <button class="next-stp" type="submit">Next Step</button>
+                        
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="stp step-4">
+                    <div class="header">
+                        <h1 class="subtitle">
+                            Finishing Up...
+                        </h1>
+                        <p class="caption">
+                            Double-check and make sure everything looks OK before confirming.
+                        </p>
+                    </div>
+                    <div class="selection-box">
+                        <div class="selection-container">
+                            <div class="selected-plan">
+                                <p class="plan-name">Single and Happy (Monthly)</p>
+                                <p class="plan-price">₦4000/mo</p>
+                            </div>
+                            <hr>
+                            <div class="addons">
+                                <template>
+                                    <div class="selected-addon">
+                                        <span class="service-name">Single and Happy</span>
+                                        <span class="service-price">₦4000/mo</span>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                        <p class="total">Total (per month) <b>₦6000/mo</b> </p>
+                    </div>
+                    <div class="buttons">
+                        <button class="prev-stp" type="button">Previous Step</button>
+                        <button class="next-stp" type="submit">Next Step</button>
+                        
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="stp step-5">
+                    <img src="assets/images/icon-thank-you.svg" alt="thanks icon" srcset="">
+                    <div class="header">
+                        <h1 class="subtitle">
+                            Thank you!
+                        </h1>
+                        <p class="caption">
+                            Thank you for confirming your subscription! We know you will have fun using our platform. If you ever need support, don't hesitate to email us at <em>octaedrix2002@gmail.com</em>.
+                        </p>
+                    </div>
+                    <button class="next-stp"></button>
+                </div>
+                <!-- Step 5 end -->
 
             </div>
         </div>
-
-
-
 
     <script src="main.js"></script>
 </body>
