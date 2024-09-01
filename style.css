@@ -124,7 +124,7 @@ body {
 
 /* Step 1 */
 .step-1 {
-    display: none;
+    display: flex;
     width: 90%;
 }
 .step-1 form {
@@ -385,7 +385,7 @@ input:checked + .slider::before{
 
 /* Step 5 */
 .step-5{
-    display: flex;
+    display: none;
     width: 90%;
     align-items: center;
     justify-content: center;
@@ -394,4 +394,75 @@ input:checked + .slider::before{
 }
 .step-5 button {
     display: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 375px) {
+    body {
+        position: relative;
+    }
+    .form-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url("assets/images/bg-sidebar-mobile.svg");
+        flex-direction: row;
+        height: 300px;
+        background-size: cover;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: -1;
+    }
+    .step-content {
+        display: none;
+    }
+    .form {
+        position: absolute;
+        top: 15%;
+        max-width: 375px;
+        background-color: white;
+    }
+    .form-container {
+        padding: 2rem;
+    }
+    .buttons {
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+        right: 0;
+        left: 0;
+        height: 100px;
+        padding-inline: 1rem;
+    }
+    .step-1 .buttons button {
+        margin: auto 0 auto auto;
+    }
+    .step-2 form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .plan-card {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+    }
+    .stp {
+        gap: 1rem;
+        width: 100%;
+    }
+    .stp .header {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        line-height: 1.5rem;
+    }
+    .switcher {
+        margin: 2rem 0;
+    }
 }
