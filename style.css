@@ -334,7 +334,7 @@ input:checked + .slider::before{
 
 /* Step 4 */
 .step-4{
-    display: flex;
+    display: none;
     width: 80%;
 }
 .selection-box {
@@ -385,6 +385,13 @@ input:checked + .slider::before{
 
 /* Step 5 */
 .step-5{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.step-5 button {
     display: none;
-    width: 80%;
 }
