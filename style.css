@@ -282,7 +282,7 @@ input:checked + .slider::before{
 
 /* Step 3 */
 .step-3{
-    display: flex;
+    display: none;
     width: 80%;
 }
 .step-3 form {
@@ -334,9 +334,54 @@ input:checked + .slider::before{
 
 /* Step 4 */
 .step-4{
-    display: none;
+    display: flex;
     width: 80%;
 }
+.selection-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.selection-container {
+    background-color: var(--Magnolia);
+    padding: 1.5rem;
+}
+.selected {
+    border: 2px solid var(--Purplish-blue);
+    background-color: var(--Purplish-blue);
+}
+.selected-plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--Marine-blue);
+    font-weight: 700;
+}
+.selected-addon {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--Cool-gray);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.selected-addon .service-price {
+    color: var(--Marine-blue);
+}
+.total {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Cool-gray);
+}
+.total b{
+    color: var(--Purplish-blue);
+    font-size: 1.3rem;
+}
+
+
 
 /* Step 5 */
 .step-5{
