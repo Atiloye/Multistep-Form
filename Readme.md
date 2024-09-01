@@ -43,7 +43,7 @@ In this solution, the user should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/Atiloye/Multistep-Form)
-- Live Site URL: [GitHub live site URL](https://your-live-site-url.com)
+- Live Site URL: [GitHub live site URL](https://atiloye.github.io/Multistep-Form/)
 
 ---
 ## My process
